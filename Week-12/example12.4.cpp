@@ -13,3 +13,14 @@
 #include <map>
 
 using namespace std;
+int main() {
+	stack<int, list<int>>stk;
+	for (int i = 1; i <= 10; i++)
+		stk.push(i);
+	while (!stk.empty()) {
+		cout << stk.top() << endl;
+		stk.pop();
+	}
+	_getch();
+	return 0;
+}
